@@ -1,7 +1,3 @@
-FROM almalinux:9
-ENV course="docker" \
-    trainer="sivakumar" \
-    duration="10hrs"
-#EXEC FORM
-#CMD ["nginx", "-g", "daemon off;"]
-CMD ["sleep", "20"]
+FROM nginx
+RUN rm -f /usr/share/nginx/html/*
+COPY qi/ /usr/share/nginx/html/
