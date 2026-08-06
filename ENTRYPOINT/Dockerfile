@@ -1,4 +1,4 @@
 FROM almalinux:9
 #entry point
-ENTRYPOINT ["PING"]
+ENTRYPOINT ["ping"]
 CMD ["yahoo.com"]
